@@ -26,18 +26,13 @@ gem 'therubyracer', platforms: :ruby
 # CoffeeScript adapter for the Rails asset pipeline. (https://github.com/rails/coffee-rails)
 gem 'coffee-rails', '~> 4.2'
 # Turbolinks makes navigating your web application faster (https://github.com/turbolinks/turbolinks)
-gem 'turbolinks', '~> 5'
-
-# gem 'sdoc', '~> 0.4.0', group: :doc
-# Bootstrap CSS toolkit for Rails 4, 3.x Asset Pipeline (https://github.com/seyhunak/twitter-bootstrap-rails)
-# gem 'twitter-bootstrap-rails'
-# Devise Bootstrap views with i18n support.
+# gem 'turbolinks', '~> 5'
+# The most popular HTML, CSS, and JavaScript framework for developing responsive, mobile first projects on the web. http://getbootstrap.com (https://github.com/twbs/bootstrap-rubygem)
 gem 'bootstrap', '~> 4.0.0'
-
+# Devise Bootstrap views with i18n support.
 gem 'devise-bootstrap-views'
-# gem 'bootstrap-datepicker-rails'
-# gem 'webpack-rails'
-
+# A date picker for Twitter Bootstrap (https://github.com/Nerian/bootstrap-datepicker-rails)
+gem 'bootstrap-datepicker-rails'
 # AWS SDK for Ruby (http://github.com/aws/aws-sdk-ruby)
 gem 'aws-sdk'
 # Ruby bindings for the Stripe API (https://stripe.com/docs/api/ruby)
@@ -66,7 +61,7 @@ group :development do
   gem 'rubocop'
   # Annotates Rails Models, routes, fixtures, and others based on the database schema. (http://github.com/ctran/annotate_models)
   gem 'annotate'
-  # help to kill N+1 queries and unused eager loading. (http://github.com/flyerhzm/bullet)
+  # help to kill N+1 queries and unused eager loading. (https://github.com/flyerhzm/bullet)
   gem 'bullet'
   # Listen to file modifications (https://github.com/guard/listen)
   gem 'listen', '>= 3.0.5', '< 3.2'

@@ -1,5 +1,3 @@
-
-
 <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom box-shadow">
   <h5 class="my-0 mr-md-auto font-weight-normal"><%= link_to 'Project Management App', root_path, class: '' %></h5>
   <nav class="my-2 my-md-0 mr-md-3">
@@ -7,10 +5,9 @@
       <%= link_to (truncate(current_user.email, length: 25)).html_safe, edit_user_registration_path, title: 'Edit Profile', class: 'p-2 text-dark' %>
       <%= link_to 'Add Members', new_member_path, class: 'btn btn-outline-success' %>
       <%= link_to('Logout', destroy_user_session_path,
-                  class: 'btn btn-outline-danger', title: 'Logout', :method => :delete) %>
+                  class: 'btn btn-outline-danger', title: 'Logout', method: :delete) %>
     <% else %>
       <%= link_to('Sign In', new_user_session_path, class: 'btn btn-outline-primary', title: 'Sign In') %>
     <% end %>
   </nav>
-<!--  <a class="btn btn-outline-primary" href="#">Sign up</a>-->
 </div>
