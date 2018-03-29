@@ -51,8 +51,6 @@ gem 'figaro'
 gem 'oink'
 # A gem that provides a client interface for the Sentry error logger (https://github.com/getsentry/raven-ruby)
 gem 'sentry-raven'
-# Use webpack to manage app-like JavaScript modules in Rails (https://github.com/rails/webpacker)
-gem 'webpacker', '~> 3.4'
 # Boot large ruby/rails apps faster (https://github.com/Shopify/bootsnap)
 gem 'bootsnap', require: false
 
@@ -82,13 +80,14 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   # Security vulnerability scanner for Ruby on Rails. (http://brakemanscanner.org)
   gem 'brakeman', require: false
-  # Entity-relationship diagram for your Rails models. (https://github.com/voormedia/rails-erd)
   # Better error page for Rails and other Rack apps (https://github.com/charliesome/better_errors)
   gem 'better_errors'
   # Retrieve the binding of a method's caller. Can also retrieve bindings even further up the stack. (http://github.com/banister/binding_of_caller)
   gem 'binding_of_caller'
   # Entity-relationship diagram for your Rails models. (https://github.com/voormedia/rails-erd)
   gem 'rails-erd'
+  # An IRB alternative and runtime developer console (http://pryrepl.org)
+  gem 'pry', '~> 0.10.4'
 end
 
 group :production do
