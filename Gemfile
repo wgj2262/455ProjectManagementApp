@@ -23,8 +23,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'therubyracer', platforms: :ruby
 # CoffeeScript adapter for the Rails asset pipeline. (https://github.com/rails/coffee-rails)
 gem 'coffee-rails', '~> 4.2'
-# Bootstrap CSS toolkit for Rails 4, 3.x Asset Pipeline (https://github.com/seyhunak/twitter-bootstrap-rails)
-gem 'twitter-bootstrap-rails'
+gem 'bootstrap', '~> 4.0.0'
+
 # rdoc html with javascript search index. (https://github.com/zzak/sdoc)
 gem 'sdoc', '~> 0.4.0', group: :doc
 # An elegant, structured (X)HTML/XML templating engine. (http://haml.info/)
