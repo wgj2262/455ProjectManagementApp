@@ -1,8 +1,7 @@
 <% if current_user %>
   <div class="cover d-flex h-100 p-3 mx-auto flex-column text-center">
     <h1 class="cover-heading">Organization: <%= @tenant.name %></h1>
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. A animi aspernatur, aut consequatur, cupiditate deleniti deserunt excepturi harum laudantium mollitia nesciunt nobis obcaecati quidem, quod recusandae! Alias, aperiam dolore. Est!</p>
-  </div>
+    <%= render 'projects/list' %>  </div>
 <% else %>
 
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
