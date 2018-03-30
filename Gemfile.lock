@@ -629,6 +629,13 @@ GEM
       ffi (~> 1.0, >= 1.0.11)
     choice (0.2.0)
     coderay (1.1.2)
+    coffee-rails (4.2.2)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0)
+    coffee-script (2.4.1)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.12.2)
     commonjs (0.2.7)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
@@ -695,7 +702,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.0)
       mini_mime (>= 0.1.1)
-    method_source (0.9.0)
+    method_source (0.8.2)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
@@ -714,6 +721,10 @@ GEM
       ast (~> 2.4.0)
     pg (0.21.0)
     powerpack (0.1.1)
+    pry (0.10.4)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
     public_suffix (3.0.2)
     puma (3.11.3)
     rack (2.0.4)
@@ -793,6 +804,7 @@ GEM
     sentry-raven (2.7.2)
       faraday (>= 0.7.6, < 1.0)
     sexp_processor (4.10.1)
+    slop (3.6.0)
     spring (2.0.2)
       activesupport (>= 4.2)
     spring-watcher-listen (2.0.1)
@@ -853,6 +865,7 @@ DEPENDENCIES
   bullet
   byebug
   capybara (~> 2.13)
+  coffee-rails
   devise (~> 4.2)
   devise-bootstrap-views
   figaro
@@ -865,6 +878,7 @@ DEPENDENCIES
   milia!
   oink
   pg (~> 0.18)
+  pry (~> 0.10.4)
   puma (~> 3.7)
   rails (~> 5.1.4)
   rails-erd

@@ -49,6 +49,7 @@ gem 'figaro'
 gem 'sentry-raven'
 # Log parser to identify actions which significantly increase VM heap size (http://github.com/noahd1/oink)
 gem 'oink'
+gem 'coffee-rails'
 
 group :development, :test do
   # Ruby fast debugger - base + CLI (http://github.com/deivid-rodriguez/byebug)
@@ -60,6 +61,7 @@ group :development, :test do
 end
 
 group :development do
+  gem 'pry', '~> 0.10.4'
   # Boot large ruby/rails apps faster (https://github.com/Shopify/bootsnap)
   gem 'bootsnap', require: false
   # Automatic Ruby code style checking tool. (https://github.com/bbatsov/rubocop)
