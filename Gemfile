@@ -17,6 +17,7 @@ gem 'devise', '~> 4.2'
 gem 'puma', '~> 3.7'
 # Sass adapter for the Rails asset pipeline. (https://github.com/rails/sass-rails)
 gem 'sass-rails', '~> 5.0'
+# Ruby CoffeeScript Compiler (http://github.com/josh/ruby-coffee-script)
 gem 'coffee-script', '~> 2.4', '>= 2.4.1'
 # Ruby wrapper for UglifyJS JavaScript compressor (http://github.com/lautis/uglifier)
 gem 'uglifier', '>= 1.3.0'
@@ -50,6 +51,8 @@ gem 'figaro'
 gem 'sentry-raven'
 # Log parser to identify actions which significantly increase VM heap size (http://github.com/noahd1/oink)
 gem 'oink'
+# Use webpack to manage app-like JavaScript modules in Rails (https://github.com/rails/webpacker)
+gem 'webpacker', '~> 3.4'
 
 group :development, :test do
   # Ruby fast debugger - base + CLI (http://github.com/deivid-rodriguez/byebug)
