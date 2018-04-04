@@ -17,14 +17,20 @@ gem 'devise', '~> 4.2'
 gem 'puma', '~> 3.7'
 # Sass adapter for the Rails asset pipeline. (https://github.com/rails/sass-rails)
 gem 'sass-rails', '~> 5.0'
+gem 'coffee-script', '~> 2.4', '>= 2.4.1'
 # Ruby wrapper for UglifyJS JavaScript compressor (http://github.com/lautis/uglifier)
 gem 'uglifier', '>= 1.3.0'
 # Embed the V8 JavaScript interpreter into Ruby (http://github.com/cowboyd/therubyracer)
 gem 'therubyracer', platforms: :ruby
+<<<<<<< HEAD
 # CoffeeScript adapter for the Rails asset pipeline. (https://github.com/rails/coffee-rails)
 gem 'coffee-rails', '~> 4.2'
 gem 'bootstrap', '~> 4.0.0'
 
+=======
+# Bootstrap CSS toolkit for Rails 4, 3.x Asset Pipeline (https://github.com/seyhunak/twitter-bootstrap-rails)
+gem 'twitter-bootstrap-rails'
+>>>>>>> bf36825e7696b5d24f5e76bbce18ce62b2828af1
 # rdoc html with javascript search index. (https://github.com/zzak/sdoc)
 gem 'sdoc', '~> 0.4.0', group: :doc
 # An elegant, structured (X)HTML/XML templating engine. (http://haml.info/)
@@ -47,12 +53,17 @@ gem 'jquery-rails'
 gem 'font-awesome-rails'
 # Simple Rails app configuration (https://github.com/laserlemon/figaro)
 gem 'figaro'
+# A gem that provides a client interface for the Sentry error logger (https://github.com/getsentry/raven-ruby)
+gem 'sentry-raven'
 # Log parser to identify actions which significantly increase VM heap size (http://github.com/noahd1/oink)
 gem 'oink'
+<<<<<<< HEAD
 # A gem that provides a client interface for the Sentry error logger (https://github.com/getsentry/raven-ruby)
 gem 'sentry-raven'
 # Boot large ruby/rails apps faster (https://github.com/Shopify/bootsnap)
 gem 'bootsnap', require: false
+=======
+>>>>>>> bf36825e7696b5d24f5e76bbce18ce62b2828af1
 
 group :development, :test do
   # Ruby fast debugger - base + CLI (http://github.com/deivid-rodriguez/byebug)
@@ -64,6 +75,8 @@ group :development, :test do
 end
 
 group :development do
+  # Boot large ruby/rails apps faster (https://github.com/Shopify/bootsnap)
+  gem 'bootsnap', require: false
   # Automatic Ruby code style checking tool. (https://github.com/bbatsov/rubocop)
   gem 'rubocop'
   # Annotates Rails Models, routes, fixtures, and others based on the database schema. (http://github.com/ctran/annotate_models)
@@ -86,12 +99,17 @@ group :development do
   gem 'binding_of_caller'
   # Entity-relationship diagram for your Rails models. (https://github.com/voormedia/rails-erd)
   gem 'rails-erd'
+<<<<<<< HEAD
   # An IRB alternative and runtime developer console (http://pryrepl.org)
   gem 'pry', '~> 0.10.4'
+=======
+  # {Seed Dumper for Rails} (https://github.com/rroblak/seed_dump)
+  gem 'seed_dump'
+  # let your Gemfile do the configuring (http://github.com/indirect/haml-rails)
+  gem "haml-rails", "~> 1.0"
+>>>>>>> bf36825e7696b5d24f5e76bbce18ce62b2828af1
 end
 
-group :production do
-end
 # Timezone Data for TZInfo (http://tzinfo.github.io)
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
 
